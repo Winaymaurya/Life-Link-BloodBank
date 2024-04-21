@@ -1,0 +1,18 @@
+.bloodNeedBox{
+   
+    height: 93vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.image{
+
+    width: 40%;
+    height: 93vh;
+    margin-right: 100px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

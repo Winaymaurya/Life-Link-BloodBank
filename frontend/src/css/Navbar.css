@@ -1,0 +1,95 @@
+/* Navbar CSS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap');
+.active{
+    border-bottom: 1.5px solid rgb(254, 254, 254);
+}
+.navbar{
+
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(116, 57, 255);
+    color: white;
+    padding: 3px 30px;
+    /* position: fixed;
+    width: 100%; */
+    position: sticky;
+    top: 0;
+  }
+  
+  ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+ul{
+      padding: 8px 1px;
+    width: 50%;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .logo{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+    font-family: "Protest Revolution", sans-serif  ;
+    font-weight: 400;
+    font-style: normal;
+    
+    
+  }
+
+  nav .menu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: .65rem;
+    right: .5rem;
+    height: 1.25rem;
+    width: 2rem;
+  }
+  nav .menu span{
+    height: 0.15rem;
+    width: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+
+  @media (max-width:600px) {
+    nav .menu{
+        display: flex;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: space-between; 
+        
+        padding: 10px 30px;
+    }
+    .navbar .logo{
+        margin-left: -450px;
+        /* border-bottom: 2px solid black; */
+    }
+    .navbar ul{
+        display: none;
+        width: 100%;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+    nav ul.open{
+        /* border-bottom: 1px solid white; */
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+      margin-top: 10px;
+
+    }
+  }
